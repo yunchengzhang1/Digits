@@ -14,6 +14,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBOutlet weak var topCenterLabel: UILabel!
+    
+    @IBAction func helloWorldTapped(_ sender: Any) {
+        self.topCenterLabel.text = "Hello MSL World!"
+    }
 }
 

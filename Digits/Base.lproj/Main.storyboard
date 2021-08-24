@@ -22,14 +22,26 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zVI-MD-oee">
+                                <rect key="frame" x="167" y="438" width="80" height="30"/>
+                                <state key="normal" title="Hello World"/>
+                                <connections>
+                                    <action selector="helloWorldTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6ls-LC-CZB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="S2n-nb-SvZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="hRB-mM-fDJ"/>
+                            <constraint firstItem="zVI-MD-oee" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="jbS-Bu-AlG"/>
                             <constraint firstItem="S2n-nb-SvZ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="qzF-Ht-8Ty"/>
+                            <constraint firstItem="zVI-MD-oee" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="y4L-EG-fyj"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="topCenterLabel" destination="S2n-nb-SvZ" id="9qK-Dx-3FM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
