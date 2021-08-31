@@ -13,6 +13,7 @@
 		CC4D6CC226D56FBA008E7762 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC4D6CC026D56FBA008E7762 /* Main.storyboard */; };
 		CC4D6CC426D56FC6008E7762 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC4D6CC326D56FC6008E7762 /* Assets.xcassets */; };
 		CC4D6CC726D56FC6008E7762 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC4D6CC526D56FC6008E7762 /* LaunchScreen.storyboard */; };
+		CCC096F126DEA76D00241C5D /* GuessingGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC096F026DEA76D00241C5D /* GuessingGameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		CC4D6CC326D56FC6008E7762 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC4D6CC626D56FC6008E7762 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC4D6CC826D56FC6008E7762 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCC096F026DEA76D00241C5D /* GuessingGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessingGameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				CC4D6CBA26D56FBA008E7762 /* AppDelegate.swift */,
 				CC4D6CBC26D56FBA008E7762 /* SceneDelegate.swift */,
 				CC4D6CBE26D56FBA008E7762 /* ViewController.swift */,
+				CCC096F026DEA76D00241C5D /* GuessingGameViewController.swift */,
 				CC4D6CC026D56FBA008E7762 /* Main.storyboard */,
 				CC4D6CC326D56FC6008E7762 /* Assets.xcassets */,
 				CC4D6CC526D56FC6008E7762 /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			files = (
 				CC4D6CBF26D56FBA008E7762 /* ViewController.swift in Sources */,
 				CC4D6CBB26D56FBA008E7762 /* AppDelegate.swift in Sources */,
+				CCC096F126DEA76D00241C5D /* GuessingGameViewController.swift in Sources */,
 				CC4D6CBD26D56FBA008E7762 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
