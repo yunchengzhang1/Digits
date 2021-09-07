@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Wjw-2P-gHt">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,7 +14,7 @@
             <objects>
                 <navigationController id="Wjw-2P-gHt" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="0H1-RZ-Edw">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -24,32 +25,32 @@
             </objects>
             <point key="canvasLocation" x="-1415" y="88"/>
         </scene>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Digits" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Digits" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guess A Number!!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S2n-nb-SvZ">
-                                <rect key="frame" x="135" y="88" width="144" height="21"/>
+                                <rect key="frame" x="376" y="44" width="144" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zVI-MD-oee">
-                                <rect key="frame" x="167" y="460" width="80" height="30"/>
+                                <rect key="frame" x="408" y="203.5" width="80" height="30"/>
                                 <state key="normal" title="Hello World"/>
                                 <connections>
                                     <action selector="helloWorldTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6ls-LC-CZB"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="TheFed" highlightedImage="TheFed" translatesAutoresizingMaskIntoConstraints="NO" id="NPP-hN-kkY">
-                                <rect key="frame" x="20" y="117" width="374" height="335"/>
+                                <rect key="frame" x="64" y="73" width="768" height="122.5"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jgc-kn-84J">
-                                <rect key="frame" x="136.5" y="498" width="141" height="30"/>
+                                <rect key="frame" x="377.5" y="241.5" width="141" height="30"/>
                                 <state key="normal" title="Play Guessing Game"/>
                                 <connections>
                                     <segue destination="Phh-t6-hRZ" kind="show" id="x6b-R3-xCK"/>
@@ -85,20 +86,71 @@
             <objects>
                 <viewController id="Phh-t6-hRZ" customClass="GuessingGameViewController" customModule="Digits" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4qI-KO-Fo8">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guess a Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t6G-iG-JPm">
-                                <rect key="frame" x="143.5" y="131" width="127" height="21"/>
+                                <rect key="frame" x="384.5" y="87" width="127" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pAo-fP-jia">
-                                <rect key="frame" x="20" y="160" width="374" height="34"/>
+                                <rect key="frame" x="64" y="116" width="605" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgN-OE-b2c">
+                                <rect key="frame" x="722" y="97" width="127" height="60"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="I6J-uV-PgV">
+                                        <variation key="heightClass=compact" constant="60"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="128" id="Myg-rU-YMi"/>
+                                    <constraint firstAttribute="height" constant="66" id="TbU-9F-PTD"/>
+                                    <constraint firstAttribute="width" constant="89" id="pZR-PG-hgr">
+                                        <variation key="heightClass=compact" constant="127"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="Guess">
+                                    <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="I6J-uV-PgV"/>
+                                        <exclude reference="pZR-PG-hgr"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="I6J-uV-PgV"/>
+                                        <exclude reference="Myg-rU-YMi"/>
+                                        <exclude reference="TbU-9F-PTD"/>
+                                        <include reference="pZR-PG-hgr"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="makeGuess:" destination="Phh-t6-hRZ" eventType="touchUpInside" id="flb-ao-tv7"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guesses: " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mdz-6G-Fmq">
+                                <rect key="frame" x="64" y="148" width="640" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="w5B-ul-Q7n"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FmY-wE-6b4">
+                                <rect key="frame" x="748" y="165" width="75" height="30"/>
+                                <state key="normal" title="New Game"/>
+                                <connections>
+                                    <action selector="makeNewGame:" destination="Phh-t6-hRZ" eventType="touchUpInside" id="ESw-qk-pDe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="QTe-FZ-9Br"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -106,17 +158,60 @@
                         <constraints>
                             <constraint firstItem="pAo-fP-jia" firstAttribute="leading" secondItem="QTe-FZ-9Br" secondAttribute="leading" constant="20" id="3Z3-Wb-NeN"/>
                             <constraint firstItem="pAo-fP-jia" firstAttribute="top" secondItem="t6G-iG-JPm" secondAttribute="bottom" constant="8" symbolic="YES" id="Bak-BK-PG1"/>
+                            <constraint firstItem="FmY-wE-6b4" firstAttribute="centerX" secondItem="vgN-OE-b2c" secondAttribute="centerX" id="Dta-JC-yJs"/>
                             <constraint firstItem="t6G-iG-JPm" firstAttribute="top" secondItem="QTe-FZ-9Br" secondAttribute="top" constant="43" id="HSy-0u-8Eo"/>
+                            <constraint firstItem="mdz-6G-Fmq" firstAttribute="top" secondItem="pAo-fP-jia" secondAttribute="bottom" constant="22" id="HuX-SZ-M2h">
+                                <variation key="heightClass=compact" constant="-2"/>
+                            </constraint>
                             <constraint firstItem="t6G-iG-JPm" firstAttribute="centerX" secondItem="QTe-FZ-9Br" secondAttribute="centerX" id="OKo-DQ-vEf"/>
-                            <constraint firstItem="QTe-FZ-9Br" firstAttribute="trailing" secondItem="pAo-fP-jia" secondAttribute="trailing" constant="20" id="VMB-UD-gYe"/>
+                            <constraint firstItem="QTe-FZ-9Br" firstAttribute="trailing" secondItem="pAo-fP-jia" secondAttribute="trailing" constant="20" id="VMB-UD-gYe">
+                                <variation key="heightClass=compact" constant="183"/>
+                            </constraint>
+                            <constraint firstItem="FmY-wE-6b4" firstAttribute="centerY" secondItem="vgN-OE-b2c" secondAttribute="centerY" id="Ziy-Ia-Qkm"/>
+                            <constraint firstItem="FmY-wE-6b4" firstAttribute="top" secondItem="vgN-OE-b2c" secondAttribute="bottom" constant="8" symbolic="YES" id="dNy-0N-xaa"/>
+                            <constraint firstItem="QTe-FZ-9Br" firstAttribute="trailing" secondItem="mdz-6G-Fmq" secondAttribute="trailing" constant="20" id="j51-Oc-CJI">
+                                <variation key="heightClass=compact" constant="148"/>
+                            </constraint>
+                            <constraint firstItem="vgN-OE-b2c" firstAttribute="leading" secondItem="pAo-fP-jia" secondAttribute="trailing" constant="74" id="jpa-Jr-uLr">
+                                <variation key="heightClass=compact" constant="53"/>
+                            </constraint>
+                            <constraint firstItem="mdz-6G-Fmq" firstAttribute="leading" secondItem="QTe-FZ-9Br" secondAttribute="leading" constant="20" id="kAF-rh-0O6"/>
+                            <constraint firstItem="vgN-OE-b2c" firstAttribute="centerX" secondItem="QTe-FZ-9Br" secondAttribute="centerX" id="mbX-fd-aEJ"/>
+                            <constraint firstItem="vgN-OE-b2c" firstAttribute="top" secondItem="pAo-fP-jia" secondAttribute="bottom" constant="90" id="otA-qw-Zps"/>
+                            <constraint firstItem="vgN-OE-b2c" firstAttribute="centerY" secondItem="pAo-fP-jia" secondAttribute="centerY" id="tzE-oa-2bG">
+                                <variation key="heightClass=compact" constant="-6"/>
+                            </constraint>
+                            <constraint firstItem="FmY-wE-6b4" firstAttribute="leading" secondItem="QTe-FZ-9Br" secondAttribute="leading" constant="28" id="z9k-hx-60E"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="jpa-Jr-uLr"/>
+                                <exclude reference="tzE-oa-2bG"/>
+                                <exclude reference="Dta-JC-yJs"/>
+                                <exclude reference="dNy-0N-xaa"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="jpa-Jr-uLr"/>
+                                <exclude reference="mbX-fd-aEJ"/>
+                                <exclude reference="otA-qw-Zps"/>
+                                <include reference="tzE-oa-2bG"/>
+                                <include reference="Dta-JC-yJs"/>
+                                <exclude reference="Ziy-Ia-Qkm"/>
+                                <include reference="dNy-0N-xaa"/>
+                                <exclude reference="z9k-hx-60E"/>
+                            </mask>
+                        </variation>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="cul-3e-nlY" appends="YES" id="zqB-RS-bIN"/>
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" id="hAN-Qj-ZG6"/>
                     <connections>
+                        <outlet property="guessButton" destination="vgN-OE-b2c" id="KYJ-QU-eCN"/>
                         <outlet property="guessNumTextField" destination="pAo-fP-jia" id="scT-6M-GgE"/>
+                        <outlet property="trackingLabel" destination="mdz-6G-Fmq" id="C2L-li-sgA"/>
                         <outlet property="userFeedback" destination="t6G-iG-JPm" id="Ewd-li-aKK"/>
                     </connections>
                 </viewController>
@@ -127,11 +222,17 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="273.91304347826087" y="87.723214285714278"/>
+            <point key="canvasLocation" x="273.88392857142856" y="86.956521739130437"/>
         </scene>
     </scenes>
     <resources>
         <image name="TheFed" width="380" height="498"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
